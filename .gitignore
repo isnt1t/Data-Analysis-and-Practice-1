@@ -161,3 +161,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/macos,python
+.idea/Data-Analysis-and-Practice-1.iml
+.idea/misc.xml
+.idea/workspace.xml
