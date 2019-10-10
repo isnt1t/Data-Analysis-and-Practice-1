@@ -167,3 +167,4 @@ $RECYCLE.BIN/
 .idea/workspace.xml
 *.xml
 .idea
+.ipynb_checkpoints
