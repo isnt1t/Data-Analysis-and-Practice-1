@@ -59,8 +59,8 @@ Optional(Extra point)
 
 
 if __name__ == "__main__":
-    print("** User-based & COS & k = 2\n **", basic_baseline(MovieLens_pivot, 'COS', 2))
-    print("** User-based & PCC & k = 2\n **", basic_baseline(MovieLens_pivot, 'PCC', 2))
+    print("** User-based & COS & k = 2 **\n", basic_baseline(MovieLens_pivot, 'COS', 2))
+    print("** User-based & PCC & k = 2 **\n", basic_baseline(MovieLens_pivot, 'PCC', 2))
 
-    print("** Item-based & COS & k = 2\n **", basic_baseline(MovieLens_pivot.T, 'COS', 2))
-    print("** Item-based & PCC & k = 2\n **", basic_baseline(MovieLens_pivot.T, 'PCC', 2))
+    print("** Item-based & COS & k = 2 **\n", basic_baseline(MovieLens_pivot.T, 'COS', 2))
+    print("** Item-based & PCC & k = 2 **\n", basic_baseline(MovieLens_pivot.T, 'PCC', 2))
