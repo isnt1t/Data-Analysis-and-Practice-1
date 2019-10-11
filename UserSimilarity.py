@@ -3,8 +3,8 @@ from RatingMatrix import MovieLens_pivot
 
 
 def COS(data):
-    simCOS = np.zeros(data.shape)  # 0으로 초기화 된 행렬 생성'
     num_users = np.size(data, axis=0)
+    simCOS = np.zeros((num_users,num_users))  # 0으로 초기화 된 행렬 생성
     for u in range(0, num_users):  # 각 유저별로 for문 반복
         arridx_u = np.where(data[u, ] == 0)
         for v in range(u + 1, num_users):
@@ -25,9 +25,9 @@ def COS(data):
 
 
 def PCC(data):
-    simPCC = np.zeros(data.shape)  # 0으로 초기화 된 행렬 생성
-    mean = np.nanmean(np.where(data != 0, data, np.nan), axis=1)
     num_users = np.size(data, axis=0)
+    simPCC = np.zeros((num_users,num_users))  # 0으로 초기화 된 행렬 생성
+    mean = np.nanmean(np.where(data != 0, data, np.nan), axis=1)
     for u in range(0, num_users):
         arridx_u = np.where(data[u, ] == 0)
         for v in range(u + 1, num_users):

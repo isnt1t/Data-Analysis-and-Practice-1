@@ -16,9 +16,8 @@ def basic_baseline(data, sim, k):
     # base user, item
     b_u = mean_u - mean
     b_i = mean_i - mean
-    # b_ui = mean + b_u + b_i
 
-    # selecting similarity fuction
+    # selecting similarity function
     if sim == 'COS':
         sim = COS(data)
     elif sim == 'PCC':
@@ -39,13 +38,10 @@ def basic_baseline(data, sim, k):
             list_rating = data[k_users[u], i].astype('float64')  # k users' ratings on item i
 
             b_ui = mean + b_u[u] + b_i[i]  # scalar
-            b_vi = mean + b_u[k_users[u]] + b_i[i]  # list
-
-            # explanation of varialbles
-            # mean_u[u] : user u의 평균
-            # mean_i[i] : item i의 평균
             # b_u[u] : user u의 baseline
+            b_vi = mean + b_u[k_users[u]] + b_i[i]  # list
             # b_i[i] : item i의 baseline
+
 
             # calculation
             mom = np.sum(list_sim)  # 분모
@@ -55,6 +51,16 @@ def basic_baseline(data, sim, k):
     return predicted_rating
 
 
+'''
+Optional(Extra point)
+1) Item-based
+기존의 basic_baseline 함수의 parameter 중 data 대신 data.T를 넣어준다.
+'''
+
+
 if __name__ == "__main__":
-    print("CF algorithm with baseline rating COS", basic_baseline(MovieLens_pivot, 'COS', 2))
-    print("CF algorithm with baseline rating PCC", basic_baseline(MovieLens_pivot, 'PCC', 2))
+    print("** User-based & COS & k = 2\n **", basic_baseline(MovieLens_pivot, 'COS', 2))
+    print("** User-based & PCC & k = 2\n **", basic_baseline(MovieLens_pivot, 'PCC', 2))
+
+    print("** Item-based & COS & k = 2\n **", basic_baseline(MovieLens_pivot.T, 'COS', 2))
+    print("** Item-based & PCC & k = 2\n **", basic_baseline(MovieLens_pivot.T, 'PCC', 2))
