@@ -14,8 +14,8 @@ def basic_baseline(data, sim, k):
     mean_i = np.nanmean(np.where(data != 0, data, np.nan), axis=0)  # the mean of all items
 
     # base user, item
-    b_u = mean_u - mean
-    b_i = mean_i - mean
+    b_u = mean_u - mean # users' baseline
+    b_i = mean_i - mean # items' baseline
 
     # selecting similarity function
     if sim == 'COS':
@@ -38,10 +38,9 @@ def basic_baseline(data, sim, k):
             list_rating = data[k_users[u], i].astype('float64')  # k users' ratings on item i
 
             b_ui = mean + b_u[u] + b_i[i]  # scalar
-            # b_u[u] : user u의 baseline
+            # b_u[u]: user u의 baseline
             b_vi = mean + b_u[k_users[u]] + b_i[i]  # list
-            # b_i[i] : item i의 baseline
-
+            # b_i[i]: item i의 baseline
 
             # calculation
             mom = np.sum(list_sim)  # 분모
@@ -49,13 +48,6 @@ def basic_baseline(data, sim, k):
             predicted_rating[u, i] = b_ui + son / mom
 
     return predicted_rating
-
-
-'''
-Optional(Extra point)
-1) Item-based
-기존의 basic_baseline 함수의 parameter 중 data 대신 data.T를 넣어준다.
-'''
 
 
 if __name__ == "__main__":
