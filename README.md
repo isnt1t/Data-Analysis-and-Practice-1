@@ -4,4 +4,4 @@
 2) UserSimilarity.py: 과제 2
 3) Memory-basedCF.py: 과제 3
 4) PredictedRating.py : 과제 4
-5) Precision&Recall&F1&NDCG.py : 과제 5
+5) Evaluation.py : 과제 5

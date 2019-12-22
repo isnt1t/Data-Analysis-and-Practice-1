@@ -13,7 +13,7 @@ Each user has at least 20 ratings
 '''
 
 # load data
-MovieLens_df = pd.read_table('ratings.dat', sep='::', engine='python', header=None, names=['UserID', 'MovieID', 'Rating', 'Timestamp'])
+MovieLens_df = pd.read_csv('ratings.dat', sep='::', engine='python', header=None, names=['UserID', 'MovieID', 'Rating', 'Timestamp'])
 
 # drop unnecessary column
 MovieLens_df.drop(['Timestamp'], axis=1, inplace=True)
