@@ -4,7 +4,7 @@
 - 17011741 문성용
 - 17011742 김소영
 
-#### :pushpin: Assignment#1~#5 ipynb
+#### :pushpin: [Assignment#1~#5 ipynb](https://github.com/isnt1t/Data-Analysis-and-Practice-1/tree/master/Assignment%231~%235_ipynb)
 1) Assignment#1.ipynb
 2) Assignment#2.ipynb
 3) Assignment#3.ipynb
