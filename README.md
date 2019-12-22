@@ -18,6 +18,6 @@
 4) [PredictedRating.py : 과제 4](https://isnt1t.github.io/Data-Analysis-and-Practice-1/AssignmentModularization/PredictedRating.py)
 5) [Evaluation.py : 과제 5](https://isnt1t.github.io/Data-Analysis-and-Practice-1/AssignmentModularization/Evaluation.py)
 
-#### :file_folder: [Final Term](https://isnt1t.github.io/Data-Analysis-and-Practice-1/Final%20Term/Final_Term)
+#### :file_folder: [Final Term](https://isnt1t.github.io/Data-Analysis-and-Practice-1/Final%20Term/Final%20Term.ipynb)
 1) PIP(Proximity-Impact-Popularity)
 2) Singularity
