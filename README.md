@@ -1,5 +1,8 @@
-## Data-Analysis-and-Practice-1 Assignment
-### :pencil2: 6조 (17011709 정선아, 17011741 문성용, 17011742 김소영)
+## :book: Data-Analysis-and-Practice-1 Assignment :book:
+### :pencil2: Team Members
+- 17011709 정선아
+- 17011741 문성용
+- 17011742 김소영
 
 #### :file_folder: Assignment#1~#5 ipynb
 1) Assignment#1.ipynb
