@@ -18,6 +18,6 @@
 4) PredictedRating.py : 과제 4
 5) Evaluation.py : 과제 5
 
-#### :pushpin: Final Term
+#### :pushpin: [Final Term](https://github.com/isnt1t/Data-Analysis-and-Practice-1/blob/master/Final_Term.ipynb)
 1) PIP(Proximity-Impact-Popularity)
 2) Singularity
