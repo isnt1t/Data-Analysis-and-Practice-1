@@ -19,8 +19,6 @@ user_index = pd.Series(user_index) # Index rename 인자로 넣기 위해 형태
 MovieLens_pivot = MovieLens_pivot_NaN.fillna(0)
 MovieLens_pivot = np.array(MovieLens_pivot) # 함수 인자로 넣기 위해 numpy array 형태로 변경
 
-MovieLens_pivot = MovieLens_pivot[:50, :50]
-
 
 class UserSimilarity:
     def __init__(self, data):
